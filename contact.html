@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="" content="">
+  <title>Contact</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+  <header>
+  <div class="topnav">
+       <a href="work.html" class="active">Phemjay</a>
+       <!-- Navigation links (hidden by default) -->
+       <div id="myLinks">
+         <a href="index.html">Home</a>
+         <a href="work.html">About</a>
+         <a href="contact.html">Contact</a>
+       </div>
+       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+       </a>
+     </div>
+  </header>
+  
+  <section id="contact-form" class="py-3">
+  <div id="container">
+  <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
+  <p>To contact us please fill out the form below</p>
+  <form action="process.php">
+    <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"/>
+    </div>
+     <div class="form-group">
+       <label for="name">Your email</label>
+       <input type="email" name="email" id="email" />
+     </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+      </div>
+      <button  type="submit" class="btn">Submit</button>
+  </form>
+  </div>
+  </section>
+  <section id="contact-info"  class="bg-dark">
+    <div class="container">
+      <div class="box" style="m">
+        <i class="fa fa-home"></i>
+        <h3>Location</h3>
+        <p>Ikorodu,Lagos Nigeria.</p>
+      </div>
+      <div style="background: darkblue" class="box bg-primary">
+        <i class="fa fa-phone"></i>
+        <h3>Phone Number</h3>
+        <p>(234) 903-9116-580</p>
+          </div>
+         <div class="box bg-light">
+           <i class="fa fa-envelope"></i>
+           <h3>Email Address</h3>
+           <p>phemyjaymes@gmail.com</p>
+         </div>
+      <a href="https://www.facebook.com/oluwafemi.aderupatan" class="fa fa-facebook">
+       </a>
+       <a href="https://www.twitter.com/phem_jay" class="fa fa-twitter"></a>
+          <a href="https://instagram.com/official_phemjay" class="fa fa-instagram"></a>
+               <a href="https://www.linkedin.com/in/oluwafemi-james-b8093a218" class="fa fa-linkedin"></a>
+    </div>
+      <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+  </section>
+  <footer id="main-footer">
+    <p>Oluwafemi &copy; 2021,All rights reserved</p>
+  <div class="clr"></div>  
+  </footer>
+</body>
+
+</html>
