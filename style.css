@@ -140,7 +140,7 @@
 * {box-sizing:border-box}
 
 /* Container for skill bars */
-.container {
+.container:skills{
   width: 100%; /* Full width */
   background-color: #ddd; /* Grey background */
 }
